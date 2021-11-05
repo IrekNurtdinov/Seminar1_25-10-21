@@ -34,17 +34,45 @@
 // // условие ложно
 // }
 
-int a = 3;
-int b = 4;
+// int a = new Random().Next(1,100);
+// int b = new Random().Next(1,100);
+// Console.WriteLine($"First number = {a}");
+// Console.WriteLine($"Second number = {b}");
 
-if(a>b)
+// if(a>b)
+// {
+// Console.WriteLine($"Max is {a}");
+// }
+// else
+// {
+//     Console.WriteLine($"Max is {b}");
+// }
+
+
+// int current = 1;
+// while (current <=10)
+// {
+//      double result = Math.Pow(current, 2);
+//      Console.WriteLine($"{current,3}^2 = {result,-4}");
+//      current++;
+// }
+
+
+int number = 2;
+int a = 100;
+int b = 500;
+int end = 10000;
+while (number <= end)
 {
-Console.WriteLine(a);
+    bool flag = number % a ==0 && number % b == 0;
+     if (flag)
+     {
+         Console.WriteLine($"{number} - {flag}");
+     }
+     number++;
 }
-else
-{
-    Console.WriteLine(b);
-}
+
+
 // void DrawRectanglle(int posX, int posY, int width, int height)
 // {
 //     int row = 0;
